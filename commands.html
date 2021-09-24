@@ -10,7 +10,9 @@
   <body>
     <div class="main_flex">
       <content>
-        <header>
+        <header
+          class="small_main_font wow animate__animated animate__fadeInDown"
+        >
           <li>
             <a href="index.html">Home</a>
           </li>
@@ -38,7 +40,90 @@
         </div>
         <div class="commands_gif"></div>
       </content>
-      <div class="lala_sit_commands"></div>
+      <div
+        class="lala_sit_commands wow animate__animated animate__fadeInRight"
+      ></div>
     </div>
+    <div class="main_line wow animate__animated animate__fadeInLeft"></div>
+    <ul class="menu-list main_font wow animate__animated animate__fadeInDown">
+      <li>
+        <a
+          class="tablinks is-active"
+          onclick="show(event, 'main_block_reaction');"
+          >Reaction</a
+        >
+      </li>
+      <li>
+        <a class="tablinks" onclick="show(event, 'main_block_fun');">Fun</a>
+      </li>
+      <li>
+        <a class="tablinks" onclick="show(event, 'main_block_information');"
+          >Information</a
+        >
+      </li>
+      <li>
+        <a class="tablinks" onclick="show(event, 'main_block_moderation');"
+          >Moderation</a
+        >
+      </li>
+      <li>
+        <a class="tablinks" onclick="show(event, 'main_block_utility');"
+          >Utility</a
+        >
+      </li>
+    </ul>
+    <div class="main_block_commands">
+      <div
+        id="main_block_reaction"
+        class="tabcontent"
+        style="display: block;"
+      ></div>
+      <div id="main_block_fun" class="tabcontent" style="display: none;"></div>
+      <div
+        id="main_block_information"
+        class="tabcontent"
+        style="display: none;"
+      ></div>
+      <div
+        id="main_block_moderation"
+        class="tabcontent"
+        style="display: none;"
+      ></div>
+      <div
+        id="main_block_utility"
+        class="tabcontent"
+        style="display: none;"
+      ></div>
+    </div>
+    <script>
+      function show(evt, command) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(
+            " is-active",
+            ""
+          );
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(command).style.display = "block";
+        evt.currentTarget.className += " is-active";
+      }
+    </script>
+    <link rel="stylesheet" href="animation.css" />
+    <script src="wow.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
