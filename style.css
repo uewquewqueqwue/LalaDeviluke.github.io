@@ -84,10 +84,9 @@ li {
 }
 
 .under_line_text {
-  display: flex;
-  justify-content: space-around;
+  width: 58px;
 
-  margin-top: 80px;
+  margin: 80px auto 0;
 }
 
 .main_block {
@@ -261,7 +260,6 @@ li {
   display: block;
 
   margin-top: 20px;
-  margin-left: 10px;
 
   color: #ffffff;
 }
@@ -279,4 +277,249 @@ li {
 .menu-list a.is-active {
   color: #ffa6bf;
   letter-spacing: 0.03em;
+}
+
+.button_1850 {
+  display: none;
+}
+
+@media screen and (max-width: 1850px) {
+  header {
+    margin: 30px auto 0;
+    width: 1024px;
+  }
+
+  .lala_sit {
+    display: none;
+  }
+
+  .lala_sit_commands {
+    display: none;
+  }
+
+  content {
+    margin-left: 0px;
+  }
+
+  .main_flex {
+    display: block;
+    width: 1024px;
+    margin: 0 auto 0;
+  }
+
+  h1 {
+    white-space: pre-wrap;
+    margin: 150px auto 0px;
+    width: 1024px;
+  }
+
+  .center_text {
+    width: 510px;
+  }
+
+  .main_1850 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1024px;
+    /* background-color: #cccccc; */
+  }
+
+  .commands_gif {
+    margin: 35px auto 0;
+    width: 1024px;
+    height: 798px;
+  }
+
+  .menu-list {
+    width: 1024px;
+    margin: 60px auto 0;
+  }
+
+  #main_block_reaction {
+    width: 1024px;
+    height: 798px;
+  }
+
+  #main_block_fun {
+    width: 1100px;
+    height: 798px;
+  }
+
+  #main_block_information {
+    width: 1100px;
+    height: 798px;
+  }
+
+  #main_block_moderation {
+    width: 1100px;
+    height: 798px;
+  }
+
+  #main_block_utility {
+    width: 1100px;
+    height: 798px;
+  }
+
+  .lala_sit_1850 {
+    /* float: right; */
+    width: 400px;
+    height: 530px;
+    background: url(/image/lala_1850.png);
+    background-repeat: no-repeat;
+  }
+
+  .button_primary_1850 {
+    display: inline-block;
+    margin: auto;
+    align-self: center;
+    vertical-align: middle;
+  }
+
+  .button_1850 {
+    display: flex;
+
+    margin-top: 60px;
+    width: 300px;
+    height: 70px;
+
+    border-radius: 3px;
+    color: #ffffff;
+    background-color: #ffa6bf;
+    filter: drop-shadow(4px 6px 4px rgba(255, 166, 191, 0.25));
+  }
+
+  .button {
+    display: none;
+  }
+
+  .button_primary {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  header {
+    margin-top: 30px;
+    width: 530px;
+  }
+
+  .label_commands {
+    width: 143px;
+    margin: 30px auto 0;
+  }
+
+  .under_line_center {
+    width: 530px;
+  }
+
+  .lala_sit {
+    display: none;
+  }
+
+  .lala_sit_1850 {
+    display: none;
+  }
+
+  .main_flex {
+    display: block;
+    width: 530px;
+    margin: 0 auto 0;
+  }
+
+  h1 {
+    white-space: pre-wrap;
+    margin: 150px auto 0px;
+    width: 530px;
+    /* width: 1024px; */
+  }
+
+  .center_text {
+    /* width: 510px; */
+    margin: 30px auto 0;
+    width: 530px;
+  }
+
+  .main_1850 {
+    width: 530px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .lala_sit_1850 {
+    display: none;
+  }
+
+  .button_1850 {
+    display: flex;
+
+    width: 300px;
+    height: 70px;
+
+    border-radius: 3px;
+    color: #ffffff;
+    background-color: #ffa6bf;
+    filter: drop-shadow(4px 6px 4px rgba(255, 166, 191, 0.25));
+  }
+
+  .main_font {
+    font-size: 1.8em;
+  }
+
+  .main_block {
+    width: 530px;
+    height: 100%;
+    padding-bottom: 15px;
+  }
+
+  .main_line {
+    width: 530px;
+    margin: 40px auto 0;
+  }
+
+  a.button_1850 {
+    margin: 40px auto 0;
+  }
+
+  .commands_gif {
+    margin: 35px auto 0;
+    width: 530px;
+    height: 798px;
+  }
+
+  .menu-list {
+    width: 530px;
+    margin: 40px auto 0;
+  }
+
+  #main_block_reaction {
+    width: 530px;
+    height: 798px;
+  }
+
+  #main_block_fun {
+    width: 530px;
+    height: 798px;
+  }
+
+  #main_block_information {
+    width: 530px;
+    height: 798px;
+  }
+
+  #main_block_moderation {
+    width: 530px;
+    height: 798px;
+  }
+
+  #main_block_utility {
+    width: 530px;
+    height: 798px;
+  }
+
+  .main_block_commands {
+    width: 530px;
+    height: 730px;
+    margin: 40px auto 40px;
+  }
 }
