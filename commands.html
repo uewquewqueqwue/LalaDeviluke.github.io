@@ -11,7 +11,7 @@
     <div class="main_flex">
       <content>
         <header
-          class="small_main_font wow animate__animated animate__fadeInDown"
+          class="small_main_font wow animate__animated animate__fadeInDown link-hover-center"
         >
           <li>
             <a href="index.html">Home</a>
@@ -37,7 +37,9 @@
         <div class="label_commands main_font main_let_spc">
           Simple and clear
         </div>
-        <div class="commands_gif"></div>
+        <div class="commands_gif">
+          <video src="/image/reaction.webm" autoplay muted loop></video>
+        </div>
       </content>
       <div
         class="lala_sit_commands wow animate__animated animate__fadeInRight"
@@ -72,27 +74,25 @@
       </li>
     </ul>
     <div class="main_block_commands">
-      <div
-        id="main_block_reaction"
-        class="tabcontent"
-        style="display: block;"
-      ></div>
-      <div id="main_block_fun" class="tabcontent" style="display: none;"></div>
+      <div id="main_block_reaction" class="tabcontent" style="display: block;">
+        <video src="/image/reaction.webm" autoplay muted loop></video>
+      </div>
+      <div id="main_block_fun" class="tabcontent" style="display: none;">
+        <video src="/image/fun.webm" autoplay muted loop></video>
+      </div>
       <div
         id="main_block_information"
         class="tabcontent"
         style="display: none;"
-      ></div>
-      <div
-        id="main_block_moderation"
-        class="tabcontent"
-        style="display: none;"
-      ></div>
-      <div
-        id="main_block_utility"
-        class="tabcontent"
-        style="display: none;"
-      ></div>
+      >
+        <video src="/image/information.webm" autoplay muted loop></video>
+      </div>
+      <div id="main_block_moderation" class="tabcontent" style="display: none;">
+        <video src="/image/moderation.webm" autoplay muted loop></video>
+      </div>
+      <div id="main_block_utility" class="tabcontent" style="display: none;">
+        <video src="/image/utility.webm" autoplay muted loop></video>
+      </div>
     </div>
     <script>
       function show(evt, command) {
