@@ -244,10 +244,10 @@ li {
   width: 1100px;
 }
 
-.commands_gif {
+#commands_gif {
   margin-top: 35px;
   width: 1100px;
-  height: 798px;
+  /* height: 798px; */
 
   border-radius: 5px;
   background-repeat: no-repeat;
@@ -353,7 +353,7 @@ li {
     /* background-color: #cccccc; */
   }
 
-  .commands_gif {
+  #commands_gif {
     margin: 35px auto 0;
     width: 1024px;
     height: 798px;
@@ -366,27 +366,27 @@ li {
 
   #main_block_reaction {
     width: 1024px;
-    height: 798px;
+    /* height: 798px; */
   }
 
   #main_block_fun {
     width: 1100px;
-    height: 798px;
+    /* height: 798px; */
   }
 
   #main_block_information {
     width: 1100px;
-    height: 798px;
+    /* height: 798px; */
   }
 
   #main_block_moderation {
     width: 1100px;
-    height: 798px;
+    /* height: 798px; */
   }
 
   #main_block_utility {
     width: 1100px;
-    height: 798px;
+    /* height: 798px; */
   }
 
   .lala_sit_1850 {
@@ -509,10 +509,10 @@ li {
     margin: 40px auto 0;
   }
 
-  .commands_gif {
+  #commands_gif {
     margin: 35px auto 0;
     width: 530px;
-    height: 798px;
+    height: 287px;
   }
 
   .menu-list {
@@ -521,33 +521,43 @@ li {
   }
 
   #main_block_reaction {
+    margin: 0;
+    padding: 0;
     width: 530px;
-    height: 798px;
+    height: 287px;
   }
 
   #main_block_fun {
+    margin: 0;
+    padding: 0;
     width: 530px;
-    height: 798px;
+    height: 287px;
   }
 
   #main_block_information {
+    margin: 0;
+    padding: 0;
     width: 530px;
-    height: 798px;
+    height: 287px;
   }
 
   #main_block_moderation {
+    margin: 0;
+    padding: 0;
     width: 530px;
-    height: 798px;
+    height: 287px;
   }
 
   #main_block_utility {
+    margin: 0;
+    padding: 0;
     width: 530px;
-    height: 798px;
+    height: 287px;
   }
 
   .main_block_commands {
     width: 530px;
-    height: 730px;
+    height: 287px;
     margin: 40px auto 40px;
   }
 }
