@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTPS/
+RewriteRule ^index\.html$ https://https://shiinamashiro55.github.io/WhyDidYou.github.io// [R=301,L]
