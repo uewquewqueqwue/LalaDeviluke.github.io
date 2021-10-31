@@ -1,166 +1,421 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <link type="image/x-icon" rel="shortcut icon" href="/image/lala_120x120.ico">
-    <link type="image/png" sizes="96x96" rel="icon" href="/image/lala_96x96.png">
-    <link type="image/png" sizes="120x120" rel="icon" href="/image/lala_120x120.png">
-    <title>Lala's assistant</title>
-  </head>
-  <body>
-    <div class="main_flex">
-      <content>
-        <header
-          class="small_main_font wow animate__animated animate__fadeInDown link-hover-center"
-        >
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="commands.html"
-              ><span class="main_let_spc">Commands</span></a
-            >
-          </li>
-          <li>
-            <a href="https://top.gg/bot/773519458839953429/invite">Invite</a>
-          </li>
-          <li>
-            <a href="https://top.gg/bot/773519458839953429/vote">Vote</a>
-          </li>
-          <li>
-            <a href="https://discord.gg/WMxdKCGE8d">Support</a>
-          </li>
-          <li>
-            <a href="https://top.gg/bot/773519458839953429">Top.gg</a>
-          </li>
-        </header>
-        <div class="label_commands main_font main_let_spc">
-          Simple and clear
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lala Deviluke</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link type="image/x-icon" rel="shortcut icon" href="https://github.com/ShiinaMashiro55/LalaDeviluke.github.io/blob/main/image/lalasmall.png?raw=true">
+    <link type="image/png" sizes="96x96" rel="icon" href="https://github.com/ShiinaMashiro55/LalaDeviluke.github.io/blob/main/image/lalasmall.png?raw=true">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="header-left">
+                <a href="index.html" class="header_logo">
+                    <img src="https://raw.githubusercontent.com/ShiinaMashiro55/WhyDidYou.github.io/main/images/lalasitemf.webp" alt="" class="header-logo">
+                </a>
+                <ul class="header-list">
+                    <a href="index.html" class="header-list_item">Home</a>
+                    <a href="https://discord.com/oauth2/authorize?client_id=773519458839953429&permissions=8&scope=bot" class="header-list_item">Invite</a>
+                    <a href="https://top.gg/bot/773519458839953429/vote" class="header-list_item">Vote</a>
+                    <a href="commands.html" class="header-list_item">Commands</a>
+                </ul>
+            </div>
+            <div class="header-right">
+                <ul class="header-list">
+                    <a href="https://discord.gg/u4jUnX7dGE" class="header-list_item">Support</a>
+                    <a href="faq.html" class="header-list_item">FAQ</a>
+                </ul>
+            </div>
         </div>
-        <video
-          id="commands_gif"
-          src="/image/commands.webm"
-          autoplay
-          muted
-          loop
-        ></video>
-        <!-- </div> -->
-      </content>
-      <div
-        class="lala_sit_commands wow animate__animated animate__fadeInRight"
-      ></div>
-    </div>
-    <div class="main_line wow animate__animated animate__fadeInLeft"></div>
-    <ul class="menu-list main_font wow animate__animated animate__fadeInDown">
-      <li class="link-hover-center">
-        <a
-          class="tablinks is-active"
-          onclick="show(event, 'main_block_reaction');"
-          >Reaction</a
-        >
-      </li>
-      <li class="link-hover-center">
-        <a class="tablinks" onclick="show(event, 'main_block_fun');">Fun</a>
-      </li>
-      <li class="link-hover-center">
-        <a class="tablinks" onclick="show(event, 'main_block_information');"
-          >Information</a
-        >
-      </li>
-      <li class="link-hover-center">
-        <a class="tablinks" onclick="show(event, 'main_block_moderation');"
-          >Moderation</a
-        >
-      </li>
-      <li class="link-hover-center">
-        <a class="tablinks" onclick="show(event, 'main_block_utility');"
-          >Utility</a
-        >
-      </li>
-    </ul>
-    <div class="main_block_commands">
-      <div id="main_block_reaction" class="tabcontent" style="display: block;">
-        <video
-          id="main_block_reaction"
-          src="/image/reaction.webm"
-          autoplay
-          muted
-          loop
-        ></video>
-      </div>
-      <div id="main_block_fun" class="tabcontent" style="display: none;">
-        <video
-          id="main_block_fun"
-          src="/image/fun.webm"
-          autoplay
-          muted
-          loop
-        ></video>
-      </div>
-      <div
-        id="main_block_information"
-        class="tabcontent"
-        style="display: none;"
-      >
-        <video
-          id="main_block_information"
-          src="/image/information.webm"
-          autoplay
-          muted
-          loop
-        ></video>
-      </div>
-      <div id="main_block_moderation" class="tabcontent" style="display: none;">
-        <video
-          id="main_block_moderation"
-          src="/image/moderation.webm"
-          autoplay
-          muted
-          loop
-        ></video>
-      </div>
-      <div id="main_block_utility" class="tabcontent" style="display: none;">
-        <video
-          id="main_block_utility"
-          src="/image/utility.webm"
-          autoplay
-          muted
-          loop
-        ></video>
-      </div>
-    </div>
+    </header>
+    <main class="page-content">
+        <div class="page-header">
+            <div class="page-header-title">Commands</div>
+            <div class="page-header-description">Information about the commands and help in using them, as well as required permissions for them.</div>
+        </div>
+        <ul class="commands-tab">
+            <a class="commands-item commands-item-tab commands-select"
+                onclick="show(event, 'reaction');">Reaction</a>
+            <a class="commands-item commands-item-tab"
+                onclick="show(event, 'fun');">Fun</a>
+            <a class="commands-item commands-item-tab"
+            onclick="show(event, 'information');">Information</a>
+            <a class="commands-item commands-item-tab"
+                onclick="show(event, 'moderation');">Moderation</a>
+            <a class="commands-item commands-item-tab"
+            onclick="show(event, 'utility');">Utility</a>
+            <a class="commands-item commands-item-tab"
+            onclick="show(event, 'character');">Character</a>
+        </ul>
+        <div class="commands-list">
+            <div id="reaction" class="commands-list-tab" style="display: block;">
+                <div class="page-text-description" style="font-weight: 700; font-family: 'Inter';" >With the participation of a person</div>
+                <div class="page-text">
+                    <div class="page-text-title">kiss</div>
+                    <div class="page-text-description">kiss someone( chu )</div>
+                    <p>Usage: <code>l)kiss</code></p>
+                    <p>Permissions: <code>Send, Read message</code></p>
+                </div>
+                <div class="page-text">
+                    <div class="page-text-title">hug</div>
+                    <div class="page-text-description">hug someone( hagu )</div>
+                    <p>Usage: <code>l)hug</code></p>
+                    <p>Permissions: <code>Send, Read message</code></p>
+                </div>
+                <div class="page-text">
+                    <div class="page-text-title">ily</div>
+                    <div class="page-text-description">tell me what you love( ai )</div>
+                    <p>Usage: <code>l)ily</code></p>
+                    <p>Permissions: <code>Send, Read message</code></p>
+                </div>
+                <div class="page-text">
+                    <div class="page-text-title">pat</div>
+                    <div class="page-text-description">pat someone( masuru )</div>
+                    <p>Usage: <code>l)pat</code></p>
+                    <p>Permissions: <code>Send, Read message</code></p>
+                </div>
+                <div class="page-text">
+                    <div class="page-text-title">poke</div>
+                    <div class="page-text-description">poke it! come on( tsuku )</div>
+                    <p>Usage: <code>l)poke</code></p>
+                    <p>Permissions: <code>Send, Read message</code></p>
+                </div>
+                <div class="page-text">
+                    <div class="page-text-title">cuddle</div>
+                    <div class="page-text-description">tell me what you love( yorisou )</div>
+                    <p>Usage: <code>l)cuddle</code></p>
+                    <p>Permissions: <code>Send, Read message</code></p>
+                </div>
+                <div class="page-text">
+                    <div class="page-text-title">yw</div>
+                    <div class="page-text-description">welcome someone( irasshaimase )</div>
+                    <p>Usage: <code>l)yw</code></p>
+                    <p>Permissions: <code>Send, Read message</code></p>
+                </div>
+                <div class="page-text">
+                    <div class="page-text-title">slap</div>
+                    <div class="page-text-description"> slap someone, deservedly so( hitto )</div>
+                    <p>Usage: <code>l)slap</code></p>
+                    <p>Permissions: <code>Send, Read message</code></p>
+                </div>
+                <div class="page-text">
+                    <div class="page-text-title">gn</div>
+                    <div class="page-text-description">say good night( oyasumi.nasai )</div>
+                    <p>Usage: <code>l)gn</code></p>
+                    <p>Permissions: <code>Send, Read message</code></p>
+                </div>
+                <div class="page-text-description" style="font-weight: 700; font-family: 'Inter';" ><br />Without participation a person</div>
+                <div class="page-text">
+                    <div class="page-text-title">ty</div>
+                    <div class="page-text-description">thank( arigato )</div>
+                    <p>Usage: <code>l)ty</code></p>
+                    <p>Permissions: <code>Send, Read message</code></p>
+                </div>
+                <div class="page-text">
+                    <div class="page-text-title">smile</div>
+                    <div class="page-text-description">so cute( kawaii )</div>
+                    <p>Usage: <code>l)smile</code></p>
+                    <p>Permissions: <code>Send, Read message</code></p>
+                </div>
+                <div class="page-text">
+                    <div class="page-text-title">blush</div>
+                    <div class="page-text-description">was embarrassed( sekimen )</div>
+                    <p>Usage: <code>l)blush</code></p>
+                    <p>Permissions: <code>Send, Read message</code></p>
+                </div>
+                <div class="page-text">
+                    <div class="page-text-title">cry</div>
+                    <div class="page-text-description">crying crying( naku )</div>
+                    <p>Usage: <code>l)cry</code></p>
+                    <p>Permissions: <code>Send, Read message</code></p>
+                </div>
+                <div class="page-text">
+                    <div class="page-text-title">sry</div>
+                    <div class="page-text-description">forgive me please( sumimasen )</div>
+                    <p>Usage: <code>l)sry</code></p>
+                    <p>Permissions: <code>Send, Read message</code></p>
+                </div>
+                <div class="page-text">
+                    <div class="page-text-title">pout</div>
+                    <div class="page-text-description">pout your cheeks( suneru )</div>
+                    <p>Usage: <code>l)pout</code></p>
+                    <p>Permissions: <code>Send, Read message</code></p>
+                </div>
+                <div class="page-text">
+                    <div class="page-text-title">hi</div>
+                    <div class="page-text-description">hello( ohayo )</div>
+                    <p>Usage: <code>l)hi</code></p>
+                    <p>Permissions: <code>Send, Read message</code></p>
+                </div>
+                <div class="page-text">
+                    <div class="page-text-title">bye</div>
+                    <div class="page-text-description">see you( jaa.ne )</div>
+                    <p>Usage: <code>l)bye</code></p>
+                    <p>Permissions: <code>Send, Read message</code></p>
+                </div>
+            </div>
+            <div id="fun" class="commands-list-tab">
+                <div class="page-text">
+                    <div class="page-text-title">how2d</div>
+                    <div class="page-text-description">find out how much percentage you are from 2d</div>
+                    <p>Usage: <code>l)how2d</code> | Aliases: <code>2d</code></p>
+                    <p>Permissions: <code>Send, Read message</code></p>
+                </div>
+                <div class="page-text">
+                    <div class="page-text-title">say</div>
+                    <div class="page-text-description">yeah, say something</div>
+                    <p>Usage: <code>l)say</code> | Aliases: <code>tell</code></p></p>
+                    <p>Permissions: <code>Send, Read message</code></p>
+                </div>
+                <div class="page-text">
+                    <div class="page-text-title">kaomoji</div>
+                    <div class="page-text-description">quite an extensive command l)info kaomoji for reference</div>
+                    <p>Usage: <code>l)kaomoji</code></p>
+                    <p>Permissions: <code>Send, Read message</code></p>
+                </div>
+                <div class="page-text">
+                    <div class="page-text-title">8ball</div>
+                    <div class="page-text-description">find out the answer to your question</div>
+                    <p>Usage: <code>l)8ball</code></p>
+                    <p>Permissions: <code>Send, Read message</code></p>
+                </div>
+                <div class="page-text">
+                    <div class="page-text-title">anime</div>
+                    <div class="page-text-description">find out the necessary information about the anime you are interested in</div>
+                    <p>Usage: <code>l)anime</code></p>
+                    <p>Permissions: <code>Send, Read message, Links</code></p>
+                </div>
+                <div class="page-text">
+                    <div class="page-text-title">manga</div>
+                    <div class="page-text-description">find out the necessary information about the manga you are interested in</div>
+                    <p>Usage: <code>l)manga</code></p>
+                    <p>Permissions: <code>Send, Read message, Links</code></p>
+                </div>
+                <div class="page-text">
+                    <div class="page-text-title">loli</div>
+                    <div class="page-text-description">oh, well, try it ))</div>
+                    <p>Usage: <code>l)loli</code></p>
+                    <p>Permissions: <code>Send, Read message</code></p>
+                </div>
+                <div class="page-text">
+                    <div class="page-text-title">panfi</div>
+                    <div class="page-text-description">arrange a fight with your friend.....pants</div>
+                    <p>Usage: <code>l)panfi</code></p>
+                    <p>Permissions: <code>Send, Read message</code></p>
+                </div>
+                <div class="page-text">
+                    <div class="page-text-title">symbols</div>
+                    <div class="page-text-description">a simple command that contains just over 2000 symbols</div>
+                    <p>Usage: <code>l)symbols</code></p>
+                    <p>Permissions: <code>Send, Read message</code></p>
+                </div>
+                <div class="page-text">
+                    <div class="page-text-title">read</div>
+                    <div class="page-text-description">short fairy tales that you may like</div>
+                    <p>Usage: <code>l)read</code> | Aliases: <code>book</code></p></p>
+                    <p>Permissions: <code>Send, Read message, Links</code></p>
+                </div>
+            </div>
+            <div id="information" class="commands-list-tab">
+                <div class="page-text">
+                    <div class="page-text-title">lala</div>
+                    <div class="page-text-description">brief information about Lala</div>
+                    <p>Usage: <code>l)l</code> | Aliases: <code>lala</code></p></p>
+                    <p>Permissions: <code>Send, Read message</code></p>
+                </div>
+                <div class="page-text">
+                    <div class="page-text-title">userinfo</div>
+                    <div class="page-text-description">information about the server member</div>
+                    <p>Usage: <code>l)userinfo</code> | Aliases: <code>user, us, whois</code></p></p>
+                    <p>Permissions: <code>Send, Read message</code></p>
+                </div>
+                <div class="page-text">
+                    <div class="page-text-title">serverinfo</div>
+                    <div class="page-text-description">information about the server</div>
+                    <p>Usage: <code>l)serverinfo</code> | Aliases: <code>server</code></p></p>
+                    <p>Permissions: <code>Send, Read message, Links</code></p>
+                </div>
+                <div class="page-text">
+                    <div class="page-text-title">servericon</div>
+                    <div class="page-text-description">get a picture that stands at this server</div>
+                    <p>Usage: <code>l)servericon</code></p>
+                    <p>Permissions: <code>Send, Read message, Links</code></p>
+                </div>
+                <div class="page-text">
+                    <div class="page-text-title">avatar</div>
+                    <div class="page-text-description">see the avatar of a person in full size</div>
+                    <p>Usage: <code>l)avatar</code> | Aliases: <code>userpic</code></p></p>
+                    <p>Permissions: <code>Send, Read message</code></p>
+                </div>
+                <div class="page-text">
+                    <div class="page-text-title">changelog</div>
+                    <div class="page-text-description">changelog in Lala</div>
+                    <p>Usage: <code>l)changelog</code> | Aliases: <code>log</code></p></p>
+                    <p>Permissions: <code>Send, Read message</code></p>
+                </div>
+            </div>
+            <div id="moderation" class="commands-list-tab">
+                <div class="page-text">
+                    <div class="page-text-title">kick</div>
+                    <div class="page-text-description">goodbye goodbye, but we'll see you again, mb. Kick a member from your server</div>
+                    <p>Usage: <code>l)kick</code></p>
+                    <p>Permissions: <code>Send, Read message, Admin rights</code></p>
+                </div>
+                <div class="page-text">
+                    <div class="page-text-title">mute</div>
+                    <div class="page-text-description">stop talking! Mute a member on your server</div>
+                    <p>Usage: <code>l)mute</code></p>
+                    <p>Permissions: <code>Send, Read message, Admin rights</code></p>
+                </div>
+                <div class="page-text">
+                    <div class="page-text-title">unmute</div>
+                    <div class="page-text-description">start talking! Unmute a member on your server</div>
+                    <p>Usage: <code>l)unmute</code></p>
+                    <p>Permissions: <code>Send, Read message, Admin rights</code></p>
+                </div>
+                <div class="page-text">
+                    <div class="page-text-title">ban</div>
+                    <div class="page-text-description">with pride, give a ban to this bad human</div>
+                    <p>Usage: <code>l)ban</code></p>
+                    <p>Permissions: <code>Send, Read message, Admin rights</code></p>
+                </div>
+                <div class="page-text">
+                    <div class="page-text-title">unban</div>
+                    <div class="page-text-description">unban the server participant</div>
+                    <p>Usage: <code>l)unban</code></p>
+                    <p>Permissions: <code>Send, Read message, Admin rights</code></p>
+                </div>
+                <div class="page-text">
+                    <div class="page-text-title">purge</div>
+                    <div class="page-text-description">purge your chat</div>
+                    <p>Usage: <code>l)purge</code></p>
+                    <p>Permissions: <code>Send, Read message, Admin rights</code></p>
+                </div>
+            </div>
+            <div id="utility" class="commands-list-tab">
+                <div class="page-text">
+                    <div class="page-text-title">ping</div>
+                    <div class="page-text-description">pong! 🏓</div>
+                    <p>Usage: <code>l)ping</code></p>
+                    <p>Permissions: <code>Send, Read message</code></p>
+                </div>
+                <div class="page-text">
+                    <div class="page-text-title">invite</div>
+                    <div class="page-text-description">
+                        <a href="https://discord.com/oauth2/authorize?client_id=773519458839953429&permissions=8&scope=bot" 
+                            style="color: var(--colorborder);">invite</a> Lala to your server</div>
+                    <p>Usage: <code>l)invite</code></p>
+                    <p>Permissions: <code>Send, Read message, Links</code></p>
+                </div>
+                <div class="page-text">
+                    <div class="page-text-title">vote</div>
+                    <div class="page-text-description">cheer up the algorithms 
+                        <a href="https://top.gg/bot/773519458839953429/vote" 
+                            style="color: var(--colorborder);" >top.gg</a> with your voices</div>
+                    <p>Usage: <code>l)vote</code></p>
+                    <p>Permissions: <code>Send, Read message, Links</code></p>
+                </div>
+                <div class="page-text">
+                    <div class="page-text-title">wiki</div>
+                    <div class="page-text-description">ask any request, the wiki will answer everything</div>
+                    <p>Usage: <code>l)wiki</code></p>
+                    <p>Permissions: <code>Send, Read message, Links</code></p>
+                </div>
+                <div class="page-text">
+                    <div class="page-text-title">google</div>
+                    <div class="page-text-description">ok google, it will respond to any request</div>
+                    <p>Usage: <code>l)google</code></p>
+                    <p>Permissions: <code>Send, Read message, Links</code></p>
+                </div>
+            </div>
+            <div id="character" class="commands-list-tab">
+                <div class="page-text">
+                    <div class="page-text-title">card</div>
+                    <div class="page-text-description">find out information about your character and share it with your friends ^-^</div>
+                    <p>Usage: <code>l)card</code> | Aliases: <code>c</code></p></p>
+                    <p>Permissions: <code>Send, Read message</code></p>
+                </div>
+                <div class="page-text">
+                    <div class="page-text-title">card_create</div>
+                    <div class="page-text-description">you can create your own character with unique characteristics</div>
+                    <p>Usage: <code>l)card_create</code> | Aliases: <code>cc</code></p></p>
+                    <p>Permissions: <code>Send, Read message</code></p>
+                </div>
+                <div class="page-text">
+                    <div class="page-text-title">card_edit</div>
+                    <div class="page-text-description">сhange the information about your character whenever it suits you and whenever you want</div>
+                    <p>Usage: <code>l)card_edit</code> | Aliases: <code>ce</code></p></p>
+                    <p>Permissions: <code>Send, Read message</code></p>
+                </div>
+                <div class="page-text">
+                    <div class="page-text-title">card_remove</div>
+                    <div class="page-text-description">remove your character, are you really leaving us. It doesn't matter after deleting you can create it again at any time</div>
+                    <p>Usage: <code>l)card_remove</code> | Aliases: <code>cr</code></p></p>
+                    <p>Permissions: <code>Send, Read message</code></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <a href="index.html">
+                    <img src="https://raw.githubusercontent.com/ShiinaMashiro55/WhyDidYou.github.io/main/images/lalasitemf.webp" class="footer-img"></img>
+                </a>
+                <div class="footer-left_text">
+                    <div class="footer-title">LALA DEVILUKE</div>
+                    <div class="footer-copyright">Copyright © 2021 Lala Deviluke</div>
+                    <div class="footer-socials">
+                        <a href="https://discord.gg/u4jUnX7dGE" class="footer-socials_link">
+                            <img src="https://img.icons8.com/ios-glyphs/24/ffffff/discord.svg"/>
+                        </a>
+                        <a href="https://twitter.com/ShiinaMashiro55" class="footer-socials_link">
+                            <img src="https://img.icons8.com/ios-filled/24/ffffff/twitter.svg"/>
+                        </a>
+                        <a href="https://www.patreon.com/laladevilukediscord" class="footer-socials_link">
+                            <img src="https://img.icons8.com/material-rounded/24/ffffff/patreon.svg"/>
+                        </a>
+                    </div>
+                </div>          
+            </div>
+            <div class="footer-links">
+                <div class="footer-links_col">
+                    <a href="commands.html" class="footer-link">Commands</a>
+                    <a href="blog.html" class="footer-link">Blog&Log</a>
+                </div>
+                <!-- <div class="footer-links_col">
+                    <a href="#" class="footer-link">Terms</a>
+                    <a href="#" class="footer-link">Privacy</a>
+                </div> -->
+            </div>
+        </div>
+    </footer>
     <script>
-      function show(evt, command) {
-        // Declare all variables
-        var i, tabcontent, tablinks;
-
-        // Get all elements with class="tabcontent" and hide them
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
+        function show(evt, command) {
+          var i, commandstab, commandslinks;
+  
+          commandstab = document.getElementsByClassName("commands-list-tab");
+          for (i = 0; i < commandstab.length; i++) {
+            commandstab[i].style.display = "none";
+          }
+  
+          commandslinks = document.getElementsByClassName("commands-item-tab");
+          for (i = 0; i < commandslinks.length; i++) {
+            commandslinks[i].className = commandslinks[i].className.replace(
+              " commands-select",
+              ""
+            );
+          }
+  
+          // Show the current tab, and add an "active" class to the button that opened the tab
+          document.getElementById(command).style.display = "block";
+          evt.currentTarget.className += " commands-select";
         }
-
-        // Get all elements with class="tablinks" and remove the class "active"
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(
-            " is-active",
-            ""
-          );
-        }
-
-        // Show the current tab, and add an "active" class to the button that opened the tab
-        document.getElementById(command).style.display = "block";
-        evt.currentTarget.className += " is-active";
-      }
     </script>
-    <link rel="stylesheet" href="animation.css" />
-    <script src="wow.js"></script>
-    <script>
-      new WOW().init();
-    </script>
-  </body>
+</body>
 </html>

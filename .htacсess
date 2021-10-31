@@ -1,3 +1,9 @@
 RewriteEngine On
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTPS/
 RewriteRule ^index\.html$ https://lalabot.xyz/index.html [R=301,L]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /blog\.html\ HTTPS/
+RewriteRule ^blog\.html$ https://lalabot.xyz/blog.html [R=301,L]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /commands\.html\ HTTPS/
+RewriteRule ^commands\.html$ https://lalabot.xyz/commands.html [R=301,L]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /faq\.html\ HTTPS/
+RewriteRule ^faq\.html$ https://lalabot.xyz/faq.html [R=301,L]
