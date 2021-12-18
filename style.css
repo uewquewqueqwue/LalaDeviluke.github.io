@@ -265,26 +265,6 @@ ul {
     color: var(--colortext);
 }
 
-.home-transitions_gear {
-    width: 24px;
-    height: 24px;
-
-    margin-left: 2px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    -webkit-animation: rotate 6s linear infinite;
-    animation: rotate 6s linear infinite;
-}
-
-@keyframes rotate {
-    100% {-webkit-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-      transform: rotate(360deg);}
-  }
-
 
 /* 
   BLOG
