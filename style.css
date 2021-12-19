@@ -29,6 +29,8 @@ body {
   font-weight: normal;
   text-decoration: none;
   list-style-type: none;
+
+  overflow: hidden;
 }
 
 a {
@@ -676,6 +678,10 @@ ul {
 */
 
 @media screen and (max-width: 630px) {
+  body {
+    overflow-y: scroll;
+  }
+
   /* MEDIA HEADER CONTENT */
   .header-content {
     font-size: 1.4em;
