@@ -30,7 +30,7 @@ body {
   text-decoration: none;
   list-style-type: none;
 
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 
 a {
@@ -192,6 +192,53 @@ ul {
     HOME 
 */
 
+a.animated-button.thar-two {
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	position: relative;
+	border: 2px solid var(--colorborder);
+	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 200px;
+  height: 55px;
+
+  background: var(--colorsubbg);
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  font-size: var(--fonttext);
+  color: var(--colortext);
+
+}
+a.animated-button.thar-two:hover {
+	color: #000 !important;
+	background-color: transparent;
+	text-shadow: ntwo;
+}
+a.animated-button.thar-two:hover:before {
+	top: 0%;
+	bottom: auto;
+	height: 100%;
+}
+a.animated-button.thar-two:before {
+	display: block;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	height: 0px;
+	width: 100%;
+	z-index: -1;
+	content: '';
+	color: #000 !important;
+	background: var(--colorborder);
+	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
 .home-content {
   max-width: 585px;
   min-width: auto;
@@ -242,12 +289,11 @@ ul {
   min-width: 300px;
 
   margin: 40px auto 0;
-
   row-gap: 20px;
   column-gap: 150px;
 }
 
-.home-transitions_item {
+/* .home-transitions_item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -262,7 +308,7 @@ ul {
 
   font-size: var(--fonttext);
   color: var(--colortext);
-}
+} */
 
 /* 
   BLOG
@@ -435,11 +481,13 @@ ul {
 */
 
 .footer {
-  display: grid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   float: inline-end;
 
   width: 100%;
-  height: 200px;
+  height: 75px;
 
   margin: 100px 0 0;
 
@@ -448,11 +496,12 @@ ul {
 
 .footer-content {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
 
   width: 95%;
   max-width: 1335px;
-  height: 200px;
+  height: 75px;
 
   margin: 0 auto 0;
 }
@@ -678,10 +727,6 @@ ul {
 */
 
 @media screen and (max-width: 630px) {
-  body {
-    overflow-y: scroll;
-  }
-
   /* MEDIA HEADER CONTENT */
   .header-content {
     font-size: 1.4em;
@@ -795,10 +840,6 @@ ul {
     padding: 10px 10px;
     margin-top: 10px;
     width: 95%;
-  }
-
-  .footer {
-    height: 100px;
   }
 
   .footer-links {
