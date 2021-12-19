@@ -30,7 +30,7 @@ body {
   text-decoration: none;
   list-style-type: none;
 
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 a {
