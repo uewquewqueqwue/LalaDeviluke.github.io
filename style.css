@@ -487,12 +487,14 @@ a.animated-button.thar-two:before {
   float: inline-end;
 
   width: 100%;
-  height: 75px;
+  height: 50px;
 
   margin: 100px 0 0;
+  padding: 2%;
 
   background-color: var(--colorsubbg);
 }
+
 
 .footer-content {
   display: flex;
@@ -522,7 +524,8 @@ a.animated-button.thar-two:before {
   display: flex;
   flex-direction: column;
 
-  margin: auto 20px;
+  /* margin: auto 20px; */
+  margin-left: 15px;
 }
 
 .footer-title {
@@ -546,7 +549,6 @@ a.animated-button.thar-two:before {
 
   height: 60px;
 
-  margin-top: 75px;
 
   column-gap: 30px;
   color: var(--colorgr);
